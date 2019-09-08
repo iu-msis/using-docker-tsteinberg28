@@ -1,0 +1,62 @@
+.mainbody {
+  background-image: url("../img/backgroundimage.jpg");
+  text-align: center;
+  color: white;
+}
+
+.topmain {
+  color: black;
+  text-align: center;
+  padding: 10px;
+
+}
+
+.homepics {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer {
+  text-align: center;
+  color: white;
+}
+
+a {
+  color: white;
+  font-style: italic;
+}
+
+.profinfo {
+  border-top: solid white 2px;
+  border-bottom: solid white 2px;
+  margin-top: 45px;
+  background-color: hsla(0, 100%, 100%, 0.9);
+  color: skyblue;
+}
+
+#profemail {
+  color: skyblue;
+}
+
+#profname {
+  background: white;
+  color: skyblue;
+
+}
+
+#formbutton {
+  margin-bottom: 10px;
+}
+
+tr {
+  background-color: hsla(210, 10%, 23%, 0.5);
+  color: white;
+}
+
+input {
+  text-align: center;
+}
+
+h1, blockquote {
+  color: skyblue;
+}

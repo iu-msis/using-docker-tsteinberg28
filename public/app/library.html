@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+  <title>Home Page - Taylor's Library</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <nav class="col navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Taylor's Library</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navigation" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="account.html">Account</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="library.html">E-Library</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="row mainbody">
+      <main>
+        <div class="topmain bg-light">
+          <h1>E-Library</h1>
+          <blockquote class="blockquote">
+            <p>Taylor's Library accepts donations from all interested parties. Please inquire through the email link provided at the bottom of this page. We appreciate your generosity and assure your donations will be utilized to help educate the world on pets large and small!</p>
+          </blockquote>
+        </div>
+
+        <div>
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Author(s)</th>
+                <th scope="col">Year Published</th>
+                <th scope="col">Publisher</th>
+                <th scope="col">Page Count</th>
+                <th scope="col">MSRP</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Introduction to Axolotls</th>
+                <td>Isaac George</td>
+                <td>1982</td>
+                <td>Lotl Libraries</td>
+                <td>142</td>
+                <td>$14.99</td>
+              </tr>
+              <tr>
+                <th scope="row">Advanced Chinchillas</th>
+                <td>Jacob Raft</td>
+                <td>2004</td>
+                <td>Fuzzy Books</td>
+                <td>289</td>
+                <td>$23.99</td>
+              </tr>
+              <tr>
+                <th scope="row">Mauled by My Tiger: A True Story</th>
+                <td>Benjamin Otis</td>
+                <td>2018</td>
+                <td>Unfortunate Stories</td>
+                <td>411</td>
+                <td>$12.99</td>
+              </tr>
+              <tr>
+                <th scope="row">The Art of Flipping Cows</th>
+                <td>David Hienkebien</td>
+                <td>2019</td>
+                <td>MOOOO Publishers</td>
+                <td>411</td>
+                <td>$16.99</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <hr>
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="inputTitle" placeholder="Title">
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="inputAuthor" placeholder="Author(s)">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="inputYrPub" placeholder="Year Published">
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="inputPub" placeholder="Publisher">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="inputPgCount" placeholder="Page Count">
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="inputMSRP" placeholder="MSRP">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-dark" id="formbutton">Add New Book to Library</button>
+        </form>
+      </main>
+    </div>
+
+    <footer>
+      <div class="row footer bg-dark">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+              <p>Owned and Operated by:<br><a href="https://www.linkedin.com/in/taylorsteinberg/">Taylor Steinberg</a></p>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+              <p>Telephone:<br>(812) 466-8432</p>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+              <p>Email:<br><a href="mailto:taylorslibrary@email.me">taylorslibrary@email.me</a></p>
+            </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
