@@ -39,7 +39,7 @@
         </div>
 
         <div>
-          <table class="table">
+          <table class="table" id="taylorstable">
             <thead class="thead-dark">
               <tr>
                 <th scope="col">Title</th>
@@ -131,5 +131,10 @@
       </div>
     </footer>
   </div>
+  <script src='../js/tablesort.min.js'></script> // Cited from http://tristen.ca/tablesort/demo/
+  <script>
+  // Cited from http://tristen.ca/tablesort/demo/
+  new Tablesort(document.getElementById('taylorstable'));
+  </script>
 </body>
 </html>
