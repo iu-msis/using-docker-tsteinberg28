@@ -29,7 +29,7 @@
       </nav>
     </div>
 
-    <div class="row mainbody">
+    <div id="userInfo" class="row mainbody">
       <main>
         <div class="topmain bg-light">
           <h1>Account Details</h1>
@@ -39,34 +39,34 @@
         </div>
 
         <div>
-          <h2 id="profname">Seth Jones</h2>
-          <img class="rounded-circle" src="img/profilepic.jpg" width="175px">
+          <span><h3 id="profname">{{ users.name.first }} {{ users.name.last }}</h3></span>
+          <span><a :href="users.picture.large"><img :src="users.picture.large" alt="profile picture" class="rounded-circle"></a></span>
         </div>
 
         <div class="row">
-          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 profinfo">
+          <div id="userInfo" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 profinfo">
             <h5>Nationality</h5>
-            <p>United States of America</p>
+            <span>{{ users.nat }}</span>
           </div>
 
           <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 profinfo">
             <h5>Age</h5>
-            <p>35</p>
+            <span>{{ users.dob.age }}</span>
           </div>
 
           <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 profinfo">
             <h5>Birthday</h5>
-            <p>June 22, 1984</p>
+            <span>{{ users.dob.date }}</span>
           </div>
 
           <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 profinfo">
             <h5>Email Address</h5>
-            <p><a id="profemail" href="mailto:seth.jones@email.me">seth.jones@email.me</a></p>
+            <span><a :href="'mailto:'+users.email" id="profemail">{{users.email}}</a></span>
           </div>
 
           <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 profinfo">
             <h5>Telephone</h5>
-            <p>(724) 332-8974</p>
+            <span>{{ users.phone  }}</span>
           </div>
 
 
@@ -93,5 +93,7 @@
       </div>
     </footer>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src='js/randomuser.js'></script>
 </body>
 </html>
