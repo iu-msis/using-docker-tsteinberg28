@@ -94,3 +94,15 @@ th[role=columnheader]:not(.no-sort):hover:after {
 	visibility: visible;
 	opacity: 1;
 }
+
+button {
+  background-color: skyblue;
+  padding: 10px;
+  border-radius: 80%;
+}
+
+#refreshButton {
+  border: solid 20px skyblue;
+  color: skyblue;
+  padding: 8px;
+}
