@@ -36,9 +36,9 @@
           <blockquote class="blockquote">
             <p>Taylor's Library requests that you maintain an up-to-date profile in order to effectively send out our monthly newsletter (Ranked #1 Animal Newsletter by The Tom Gregory Times)</p>
           </blockquote>
+          <!-- Referenced StackOverflow for refresh help -->
           <div id="refreshButton">
-            <h6>Press to Refresh</h6>
-            <button class="button" value="Refresh Page" onClick="window.location.reload();"></button>
+            <button v-on:click="fetchUsers">Generate a New User</button>
           </div>
         </div>
 
@@ -48,7 +48,7 @@
         </div>
 
         <div class="row">
-          <div id="userInfo" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 profinfo">
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 profinfo">
             <h5>Nationality</h5>
             <span>{{ users.nat }}</span>
           </div>
@@ -72,13 +72,7 @@
             <h5>Telephone</h5>
             <span>{{ users.phone  }}</span>
           </div>
-
-
         </div>
-
-
-
-
       </main>
     </div>
 
