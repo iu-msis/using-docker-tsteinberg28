@@ -36,10 +36,9 @@
           <blockquote class="blockquote">
             <p>Taylor's Library requests that you maintain an up-to-date profile in order to effectively send out our monthly newsletter (Ranked #1 Animal Newsletter by The Tom Gregory Times)</p>
           </blockquote>
-          <!-- Referenced StackOverflow for refresh help -->
-          <div id="refreshButton">
-            <button v-on:click="fetchUsers">Generate a New User</button>
-          </div>
+          <form @submit.prevent="fetchUsers">
+            <button type="submit">Generate New Profile</button>
+          </form>
         </div>
 
         <div>
